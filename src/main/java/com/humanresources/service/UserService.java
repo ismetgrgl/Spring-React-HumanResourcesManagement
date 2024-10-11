@@ -125,7 +125,7 @@ public class UserService {
         // Şifre yenileme maili gönderilecek
         String link = "http://localhost:3000/changeMyPassword";
         SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setBcc("bilgeadamworks@gmail.com");
+        mailMessage.setBcc("ismetmustafa068@gmail.com");
         mailMessage.setSubject("Forgot Password Reset Link");
         mailMessage.setText("Doğrulama Kodunuz :"+ userOptional.get().getRePasswordCode() +" ,şifre yenilemek için linke tıklayın  " +link);
         mailMessage.setTo(email);
